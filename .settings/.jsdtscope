@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="template/|template/photoswipe/" kind="src" path="www/js"/>
+	<classpathentry excluding="photoswipe/" kind="src" path="www/js/template"/>
+	<classpathentry kind="src" path="www/js/template/photoswipe"/>
+	<classpathentry kind="src" path="www/lib"/>
+	<classpathentry excluding="photoswipe/" kind="src" path="www/partials/js"/>
+	<classpathentry kind="src" path="www/partials/js/photoswipe"/>
+	<classpathentry excluding="routes/" kind="src" path="www/server"/>
+	<classpathentry kind="src" path="www/server/routes"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

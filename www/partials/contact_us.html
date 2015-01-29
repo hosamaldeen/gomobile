@@ -1,0 +1,18 @@
+<div style='position: fixed' id="sp-nav"  ng-include="'partials/menu.html'"></div>
+
+<div style='position: fixed;height:auto' id="sp-page">
+    <div ng-include="'partials/header.html'"></div>
+</div>
+<div id="content" style="text-align:center;" >
+        
+        <h1>Send Email</h1>
+            <label>Title </label>
+            <input type="text" class="form-control" ng-model="title"  />
+            <br/>
+            
+            <label>Message</label>
+            <textarea class="form-control" ng-model="msg" ></textarea>
+            <br/>
+            
+            <input type="button" class="btn btn-primary" ng-click="send_mail()" value="send" name="save"  />
+</div>

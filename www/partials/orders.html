@@ -1,0 +1,44 @@
+<div class="swiper-slide sliderbg">
+    <div class="swiper-container swiper-nested2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-inner">
+                    <div class="pages_container">
+                        <h2 class="page_title">Orders</h2>
+                      
+                        <ul class="responsive_table">
+                            <li class="table_row">
+                                <div style='width: 6%;' class="table_section_small">id</div>
+                                <div class="table_section_small">Track number</div> 
+                                <div class="table_section_small">Status</div> 
+                                <div class="table_section_small">Price</div> 
+                                <div class="table_section_small">From</div> 
+                                <div class="table_section_small">To</div> 
+                                <div class="table_section_small">Actions</div> 
+                            </li>
+                           
+                            <li ng-repeat="order in orders" class="table_row">
+                                <div  style='width: 6%;' class="table_section_small">{{order.id}}</div>
+                                <div class="table_section_small">{{order.track_number}}</div> 
+                                <div class="table_section_small">{{order.status}}</div> 
+                                <div class="table_section_small">{{order.total}}</div> 
+                                <div class="table_section_small">{{order.from_address}}</div> 
+                                <div class="table_section_small">{{order.to_address}}</div> 
+                                <div class="table_section_small">
+                                    <img class='table_icons' ng-click='viewOrder(order)' src='images/icons/glyphicons-237-zoom-in.png' />
+                                    <img class='table_icons' ng-click='openOrderMap(order)' src='images/icons/glyphicons-336-pushpin.png' />
+                                </div> 
+                            </li>
+                        </ul>
+
+                        <div class="clearfix"></div>
+                        
+                    </div>
+                    <!--End of page container-->
+                </div>
+            </div>
+        </div>
+        <div class="swiper-scrollbar2"></div>
+    </div>
+</div>
+

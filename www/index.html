@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+        <meta name="author" content="FamousThemes" />
+        <meta name="description" content="GoMobile - A next generation web app theme" />
+        <meta name="keywords" content="mobile web app, mobile template, mobile design, mobile app design, mobile app theme, mobile wordpress theme, my mobile app" />
+        <title>GoMobile - A next generation web app theme</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/animation.css"/>
+        <link type="text/css" rel="stylesheet" href="colors/color.css"/>
+        <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css"/>
+        <link type="text/css" rel="stylesheet" href="css/swipebox.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="lib/jquery-2.1.3.min.js"></script>
+        <script src="lib/angular.js"></script>
+       
+        <script src="lib/angular-resource.js"></script>
+        <script src="lib/angular-animate.js"></script>
+        <script src="lib/angular-route.js"></script>
+        
+        <script src="lib/PushNotification.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/memory-services.js"></script>
+     
+        <link type="text/css" rel="stylesheet" href="lib/ngDialog/css/ngDialog.css" />
+        <link type="text/css" rel="stylesheet" href="lib/ngDialog/css/ngDialog-theme-default.css" />
+        <script src="lib/ngDialog/js/ngDialog.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    </head>
+
+    <body ng-controller="MainCtrl">
+        <div id="header">
+            <div class="gohome"><a href="#home"><img src="images/icons/home.png" alt="" title="" /></a></div>
+        </div>
+        <div class="view-animate-container">
+            <div ng-view ng-class="slide">
+                 
+            </div>
+        </div>
+
+    </body>
+</html>
+

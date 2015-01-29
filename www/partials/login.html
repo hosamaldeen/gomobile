@@ -1,0 +1,64 @@
+<div class="swiper-slide sliderbg">
+    <div class="swiper-container swiper-nested9">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-inner">
+                    <div class="pages_container">
+
+                        <div class="toogle_wrap">
+                            <div class="trigger"><a href="#"><span style="font-size: 20px" >Login</span> </a></div>
+
+                            <div class="toggle_container" style="display: block;">
+                                <form ng-init="{wrongPasswod:false}" class='login-form' novalidate>
+
+                                    <div ng-show="wrongPasswod"  class="alert alert-danger" role="alert"> The Username Or Password Is Incorrect</div>
+
+                                    <label>User Name:</label>
+                                    <input type="text" class="form_input txt requiredField" placeholder="Enter User Name" ng-model="username"><br>
+
+                                    <br/>
+                                    <label>Password:</label>
+                                    <input type="password" class="form_input txt requiredField" placeholder="Enter Pasword" ng-model="password">
+                                    <br><br>
+                                    <button class="form_submit green green_borderbottom" ng-click="login()">Login</button>
+
+                                </form>
+                            </div>
+                        </div>
+                        <span style="font-size: 18px" >OR</span>
+                        <div class="toogle_wrap">
+                            <div class="trigger"><a href="#"><span style="font-size: 20px" >Register</span></a></div>
+
+                            <div class="toggle_container" style="display: none;">
+                                <form ng-init="{error:false}" class='login-form' novalidate>
+
+                                    <div ng-show="error"  class="alert alert-danger" role="alert"> {{msg}}</div>
+
+                                    <label>User Name:</label>
+                                    <input type="text" class="form_input txt requiredField" placeholder="Enter User Name" ng-model="reg.username">
+                                    
+                                    <br/><br/>
+                                    <label>Email:</label>
+                                    <input type="text" class="form_input txt requiredField" placeholder="Enter Email" ng-model="reg.email">
+                                    
+                                    <br/><br/>
+                                    <label>Password:</label>
+                                    <input type="password" class="form_input txt requiredField" placeholder="Enter Pasword" ng-model="reg.password">
+                                    
+                                    <br/><br/>
+                                    <button class="form_submit green green_borderbottom" ng-click="register()">Register</button>
+
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--End of page container-->
+                </div>
+            </div>
+        </div>
+        <div class="swiper-scrollbar9"></div>
+    </div>
+</div>
+

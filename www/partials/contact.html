@@ -1,0 +1,19 @@
+
+<h1>Contact Search</h1>
+<br/>
+<input type='text' ng-model="search_val" ng-change="search()" class='form-control' placeholder="filter contact" />
+<div ng-hide='contact_hide' class="list-group" id='result' ng-model="result_ul"  >
+    <a ng-click="show_numbers(item)"  style='cursor: pointer;text-decoration:none' ng-repeat="item in result | filter:search_val | limitTo:5"   class="list-group-item" >
+    {{item.displayName}}
+    <p style='font-size: 10px;'>
+    {{item.phoneNumbers[0].value}}
+    </p>
+    </a>
+</div>
+
+<div ng-show='contact_number' class="list-group"  ng-model="result_ul2"  >
+    <a class='list-group-item disabled' > {{contact.displayName}} </a>
+    <a ng-click="select_number(number.value)"  style='cursor: pointer;text-decoration:none' ng-repeat="number in contact.phoneNumbers"   class="list-group-item" >
+    {{number.value}}   
+    </a>
+</div>
